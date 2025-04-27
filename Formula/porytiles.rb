@@ -2,7 +2,7 @@ class Porytiles < Formula
     desc "Overworld tileset compiler for Pokémon Generation III decompilation projects"
     homepage "https://github.com/grunt-lucas/porytiles"
     # version must be a monotonically increasing number for brew to pick up updates
-    version "20250427220010"
+    version "20250427220010-nightly-0e324768789ae011f18db8caad21e24a397d6cbb"
     nightly = "nightly-0e324768789ae011f18db8caad21e24a397d6cbb"
   
     # Define URLs and checksums for different architectures
