@@ -12,7 +12,7 @@ class Porytiles < Formula
     elsif OS.linux? && Hardware::CPU.arm?
       url "https://github.com/grunt-lucas/porytiles/releases/download/#{nightly}/porytiles-linux-arm64.zip"
       sha256 "6f3c30f451f55dd1ba7205cd8e7c57db82dff1a2e233f1949a5fb280b045855c"
-    if OS.mac? && Hardware::CPU.intel?
+    elsif OS.mac? && Hardware::CPU.intel?
       url "https://github.com/grunt-lucas/porytiles/releases/download/#{nightly}/porytiles-macos-amd64.zip"
       sha256 "8a2abe74636f6c5d6296741e221492ba3d5ca1822fe2c3e46d6363e0787210fc"
     elsif OS.mac? && Hardware::CPU.arm?
