@@ -8,16 +8,16 @@ class Porytiles < Formula
   # Define URLs and checksums for different architectures
   if OS.linux? && Hardware::CPU.intel?
     url "https://github.com/grunt-lucas/porytiles/releases/download/#{nightly}/porytiles-linux-amd64.zip"
-    sha256 "461fbe4c28abdb9bc38877f67d2db76a6a5dc4f27b9de6e9308f2c156491b976"
+    sha256 "7e64fa0facab7a95c530be3eb11188992f6492d30bfeb3101f2602adfed38f34"
   elsif OS.linux? && Hardware::CPU.arm?
     url "https://github.com/grunt-lucas/porytiles/releases/download/#{nightly}/porytiles-linux-arm64.zip"
-    sha256 "8633f3c3efde897a5e1909d593c3563e9814e01f04fe51aec94e8bc0a6d65d87"
+    sha256 "73fa0f161bad790139b4da94f71413b862fc9c6c52f2655f851472f46c9a2d85"
   elsif OS.mac? && Hardware::CPU.intel?
     url "https://github.com/grunt-lucas/porytiles/releases/download/#{nightly}/porytiles-macos-amd64.zip"
-    sha256 "65e902e03a34e29d80c861639355c7671095d985683855256569fe7587f5b3fc"
+    sha256 "98668807f28d19257cb795a9eb367e306665573cf1b04f7f6f970d9f5bd5d467"
   elsif OS.mac? && Hardware::CPU.arm?
     url "https://github.com/grunt-lucas/porytiles/releases/download/#{nightly}/porytiles-macos-arm64.zip"
-    sha256 "bf346564152a18fa6416952338b2ef70e34775a295eaaebc4d663b6f6d30fbce"
+    sha256 "90cc9b08038339850d920651c338d7b781efe7c1bec3822d7ca020765c08eb7a"
   end
 
   def install
