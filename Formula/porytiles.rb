@@ -2,22 +2,22 @@ class Porytiles < Formula
     desc "Overworld tileset compiler for Pokémon Generation III decompilation projects"
     homepage "https://github.com/grunt-lucas/porytiles"
     # version must be a monotonically increasing number for brew to pick up updates
-    version "20250429150513-nightly-09d1f958756081ffb1ad0d36a7f64fc8a56078cb"
-    nightly = "nightly-09d1f958756081ffb1ad0d36a7f64fc8a56078cb"
+    version "20250429153714-nightly-d701e86a81fb7ecde908373701f238634b5925a4"
+    nightly = "nightly-d701e86a81fb7ecde908373701f238634b5925a4"
   
     # Define URLs and checksums for different architectures
     if OS.linux? && Hardware::CPU.intel?
       url "https://github.com/grunt-lucas/porytiles/releases/download/#{nightly}/porytiles-linux-amd64.zip"
-      sha256 "734fe9b6b83fe6b5fd3c99134c402a6e541c5de3a47fee66a7fcee99b0586a82"
+      sha256 "461fbe4c28abdb9bc38877f67d2db76a6a5dc4f27b9de6e9308f2c156491b976"
     elsif OS.linux? && Hardware::CPU.arm?
       url "https://github.com/grunt-lucas/porytiles/releases/download/#{nightly}/porytiles-linux-arm64.zip"
-      sha256 "9c5fe3cee402afd25f721db47d2bd69d31d86d1be062c22f2dac4a4e9b2e4810"
+      sha256 "8633f3c3efde897a5e1909d593c3563e9814e01f04fe51aec94e8bc0a6d65d87"
     elsif OS.mac? && Hardware::CPU.intel?
       url "https://github.com/grunt-lucas/porytiles/releases/download/#{nightly}/porytiles-macos-amd64.zip"
-      sha256 "6e48641220337fb0070d91c1fd17dad8bcb5e09202691cf9848420e1ee75357f"
+      sha256 "65e902e03a34e29d80c861639355c7671095d985683855256569fe7587f5b3fc"
     elsif OS.mac? && Hardware::CPU.arm?
       url "https://github.com/grunt-lucas/porytiles/releases/download/#{nightly}/porytiles-macos-arm64.zip"
-      sha256 "b9fe8e01a197d735e357ac602c7abec30000df48f218140eab01599f6c727539"  
+      sha256 "bf346564152a18fa6416952338b2ef70e34775a295eaaebc4d663b6f6d30fbce"  
     end
 
     def install
