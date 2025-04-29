@@ -17,7 +17,7 @@ class Porytiles < Formula
     sha256 "65e902e03a34e29d80c861639355c7671095d985683855256569fe7587f5b3fc"
   elsif OS.mac? && Hardware::CPU.arm?
     url "https://github.com/grunt-lucas/porytiles/releases/download/#{nightly}/porytiles-macos-arm64.zip"
-    sha256 "bf346564152a18fa6416952338b2ef70e34775a295eaaebc4d663b6f6d30fbce"  
+    sha256 "bf346564152a18fa6416952338b2ef70e34775a295eaaebc4d663b6f6d30fbce"
   end
 
   def install
