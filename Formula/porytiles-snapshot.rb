@@ -1,4 +1,4 @@
-class PorytilesATSnapshot < Formula
+class PorytilesSnapshot < Formula
   desc "Overworld tileset compiler for Pokémon Generation III decompilation projects (rolling snapshot from develop)"
   homepage "https://github.com/grunt-lucas/porytiles"
   # Snapshot version: <project-version>-snapshot.<utc-timestamp>.<short-sha>
