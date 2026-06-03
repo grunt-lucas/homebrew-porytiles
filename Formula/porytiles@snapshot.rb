@@ -7,15 +7,12 @@ class PorytilesAtSnapshot < Formula
 
   # Define URLs and checksums for different architectures.
   # The sha256 lines are rewritten by the snapshot_release.yml workflow.
-  # All four branches point at the rolling `snapshot` tag.
+  # macos-amd64 (Intel) is deliberately unsupported - see porytiles repo CI configuration.
   if OS.linux? && Hardware::CPU.intel?
     url "https://github.com/grunt-lucas/porytiles/releases/download/snapshot/porytiles-linux-amd64.zip"
     sha256 "0000000000000000000000000000000000000000000000000000000000000000"
   elsif OS.linux? && Hardware::CPU.arm?
     url "https://github.com/grunt-lucas/porytiles/releases/download/snapshot/porytiles-linux-arm64.zip"
-    sha256 "0000000000000000000000000000000000000000000000000000000000000000"
-  elsif OS.mac? && Hardware::CPU.intel?
-    url "https://github.com/grunt-lucas/porytiles/releases/download/snapshot/porytiles-macos-amd64.zip"
     sha256 "0000000000000000000000000000000000000000000000000000000000000000"
   elsif OS.mac? && Hardware::CPU.arm?
     url "https://github.com/grunt-lucas/porytiles/releases/download/snapshot/porytiles-macos-arm64.zip"
