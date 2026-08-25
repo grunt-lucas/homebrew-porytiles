@@ -3,20 +3,20 @@ class PorytilesSnapshot < Formula
   homepage "https://github.com/grunt-lucas/porytiles"
   # Snapshot version: <project-version>-snapshot.<utc-timestamp>.<short-sha>
   # The version line is rewritten by the snapshot_release.yml workflow on every push to develop.
-  version "1.0.0-snapshot.20260825132657.6e4951d0"
+  version "1.0.0-snapshot.20260825144550.c15a2df8"
 
   # Define URLs and checksums for different architectures.
   # The sha256 lines are rewritten by the snapshot_release.yml workflow.
   # macos-amd64 (Intel) is deliberately unsupported - see porytiles repo CI configuration.
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/grunt-lucas/porytiles/releases/download/snapshot/porytiles-linux-amd64.zip"
-    sha256 "3d1f3a14dab6e4895169ac1e4869e2f3d63fac9b977f2456d5170bd795665a50"
+    url "https://github.com/grunt-lucas/porytiles/releases/download/snapshot-20260825144550/porytiles-linux-amd64.zip"
+    sha256 "abb75bcf2ddccb15e0dd6aa917948bbe6dcb0001eb40998d8d6ad915beb7c391"
   elsif OS.linux? && Hardware::CPU.arm?
-    url "https://github.com/grunt-lucas/porytiles/releases/download/snapshot/porytiles-linux-arm64.zip"
-    sha256 "a8302bcbe66a605528abccdc08c4d804ecf8791c9bc5bd5f5d351dc7883bdb4c"
+    url "https://github.com/grunt-lucas/porytiles/releases/download/snapshot-20260825144550/porytiles-linux-arm64.zip"
+    sha256 "72005a66f1594972f961571d1c06a536afec453c3f9420ea490f8d9d3cbd2b9f"
   elsif OS.mac? && Hardware::CPU.arm?
-    url "https://github.com/grunt-lucas/porytiles/releases/download/snapshot/porytiles-macos-arm64.zip"
-    sha256 "e1fa2f4a777cc672280edfb6ad58ba83e1b7132c7d0d11f9dde340b5a0458183"
+    url "https://github.com/grunt-lucas/porytiles/releases/download/snapshot-20260825144550/porytiles-macos-arm64.zip"
+    sha256 "0ff281da3e4e6508d44f7f21805537277e36040f1063217db1ddfabfb3aee0e3"
   end
 
   def install
